@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и Видео</a>
+            </li>
+            <li>
+              <a href="" class="logo">
+                <img src="http://placehold.it/150x100" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-query clearfix">
+      <form name="query" action="/echo" method="post">
+
+        <h2 class="">Инфрастуктура:</h2>
+        <label>
+          <input type="checkbox" name="infrastructure" checked>Бассейн
+        </label>
+        <label>
+          <input type="checkbox" name="infrastructure">Парковка
+        </label>
+        <label>
+          <input type="checkbox" name="infrastructure" checked>WI-FI
+        </label>
+
+        <h2 class="">Тип жилья:</h2>
+        <label>
+          <input type="checkbox" name="housing" checked>Гостиница
+        </label>
+        <label>
+          <input type="checkbox" name="housing" checked>Мотель
+        </label>
+        <label>
+          <input type="checkbox" name="housing" checked>Апартаменты
+        </label>
+
+        <h2 class="">Стоимость в сутки (р):</h2>
+        <table>
+          <tr>
+            <td><h2 class="">От 0</h2></td>
+            <td><h2 class="">До 3000</h2></td>
+          </tr>
+        </table>
+        <button class="btn" type="submit" name="submit">Показать</button>
+      </form>
+    </div>
+    
+    <div class="container">
+
+      <div class="response-title clearfix">
+        <h1 class="">Найдено: 3</h1>
+        <p>Сортировка:</p>
+        <div class="sort clearfix">
+          <a href="" class="active">По цене</a>
+          <a href="" class="">По типу</a>
+          <a href="" class="">По рейтингу</a>
+        </div>
+        <div class="">
+          <a href=""><i class=""></i></a>
+          <a href=""><i class=""></i></a>
+        </div>
+      </div>
+
+      <div class="response clearfix">
+        <article class="response_item clearfix">
+          <div class="img-item">
+            <img src="http://placehold.it/150x100" alt="">
+          </div>
+          <div class="img-item">
+            <h1 class="article-title">Amara Resort & Spa</h1>
+            <i class="article-rating"></i>
+          </div>
+          <p>Гостиница от 3500 р.</p>
+          <div class="">
+            <a href="" class="btn more">Подробнее</a>
+            <a href="" class="btn reserve">Забронировать</a>
+          </div>
+          <span class="">Рейтинг: 8,5</span>
+        </article>
+
+        <article class="response_item clearfix">
+          <div class="img-item">
+            <img src="http://placehold.it/150x100" alt="">
+          </div>
+          <div class="img-item">
+            <h1 class="article-title">Desert Quail Inn</h1>
+            <i class="article-rating"></i>
+          </div>
+          <p>Мотель от 2000 р.</p>
+          <div class="">
+            <a href="" class="btn more">Подробнее</a>
+            <a href="" class="btn reserve">Забронировать</a>
+          </div>
+          <span class="">Рейтинг: 8,9</span>
+        </article>
+
+        <article class="response_item clearfix">
+          <div class="img-item">
+            <img src="http://placehold.it/150x100" alt="">
+          </div>
+          <div class="img-item">
+            <h1 class="article-title">Villas at Poco Diablo</h1>
+            <i class="article-rating"></i>
+          </div>
+          <p>Апартаменты от 4000 р.</p>
+          <div class="">
+            <a href="" class="btn more">Подробнее</a>
+            <a href="" class="btn reserve">Забронировать</a>
+          </div>
+          <span class="">Рейтинг: 9,2</span>
+        </article>
+      </div>
+    </div>
+
+    <footer class="main-footer clearfix">
+      <a href="" class="visit">
+        <img src="http://placehold.it/150x100" alt="">
+      </a>
+      <div class="social">
+        <a href="" class="social_item"><i class=""></i></a>
+        <a href="" class="social_item"><i class=""></i></a>
+        <a href="" class="social_item"><i class=""></i></a>
+      </div>
+      <span class="">Website by <img src="src=http://placehold.it/150x100" alt=""></span>
+    </footer>
+  </body>
+</html>
