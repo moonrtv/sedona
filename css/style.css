@@ -1,0 +1,18 @@
+body {
+	font-size: 14px;
+	vertical-align: top;
+	color: #000000;
+	font-weight: normal;
+	font-family: "PT Sans", Verdana, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 21px;
+	font-weight: 700;
+}
