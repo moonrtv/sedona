@@ -5,59 +5,62 @@
     <title>Седона</title>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <header class="main-header">
-      <div class="container clearfix">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и Видео</a>
-            </li>
-            <li>
-              <a href="" class="logo">
-                <img src="img/logo.png" width="138" height="70" alt="Logo">
-              </a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="wrapper">
+    <div class="catalog-banner">
+    <!-- header -->
+      <header class="main-header">
+        <div class="container clearfix">
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a class="main-navigation-title" href="#">Информация</a>
+              </li>
+              <li>
+                <a class="main-navigation-title" href="#">Фото и Видео</a>
+              </li>
+              <li>
+                <a class="main-navigation-title logo" href="index.html">
+                  <img src="img/logo.png" width="138" height="70" alt="Logo">
+                </a>
+              </li>
+              <li>
+                <a class="main-navigation-title" href="#">Карта штата</a>
+              </li>
+              <li>
+                <a class="main-navigation-title" href="#">Гостиницы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
     <div class="top-query clearfix">
       <form name="query" action="/echo" method="post">
 
+      <div class="infrastructure">
         <h2 class="">Инфрастуктура:</h2>
-        <label>
-          <input type="checkbox" name="infrastructure" checked>Бассейн
-        </label>
-        <label>
-          <input type="checkbox" name="infrastructure">Парковка
-        </label>
-        <label>
-          <input type="checkbox" name="infrastructure" checked>WI-FI
-        </label>
+        <input type="checkbox" name="infrastructure" id="infrastructure-1" checked>
+        <label class="checkbox-i" for="infrastructure-1">Бассейн</label>
+        <input type="checkbox" name="infrastructure" id="infrastructure-2">
+        <label class="checkbox-i" for="infrastructure-2">Парковка</label>
+        <input type="checkbox" name="infrastructure" id="infrastructure-3" checked>
+        <label class="checkbox-i" for="infrastructure-3">WI-FI</label>
+      </div>
 
+      <div class="housing">
         <h2 class="">Тип жилья:</h2>
-        <label>
-          <input type="checkbox" name="housing" checked>Гостиница
-        </label>
-        <label>
-          <input type="checkbox" name="housing" checked>Мотель
-        </label>
-        <label>
-          <input type="checkbox" name="housing" checked>Апартаменты
-        </label>
+        <input type="checkbox" name="housing" id="housing-1" checked>
+        <label class="checkbox-h" for="housing-1">Гостиница</label>
+        <input type="checkbox" name="housing" id="housing-2" checked>
+        <label class="checkbox-h" for="housing-2">Мотель</label>
+        <input type="checkbox" name="housing" id="housing-3" checked>
+        <label class="checkbox-h" for="housing-3">Апартаменты</label>
+      </div>
 
+      <div class="cost">
         <h2 class="">Стоимость в сутки (р):</h2>
         <table>
           <tr>
@@ -65,9 +68,11 @@
             <td><h2 class="">До 3000</h2></td>
           </tr>
         </table>
-        <button class="btn" type="submit" name="submit">Показать</button>
+        <button class="btn-catalog" type="submit" name="submit">Показать</button>
+      </div>
       </form>
     </div>
+  </div>
     
     <div class="container">
 
@@ -137,15 +142,20 @@
     </div>
 
     <footer class="main-footer clearfix">
-      <a href="" class="visit">
-        <h2>#visitsedona</h2>
-      </a>
-      <div class="social">
-        <a href="" class="social_item"><i class=""></i></a>
-        <a href="" class="social_item"><i class=""></i></a>
-        <a href="" class="social_item"><i class=""></i></a>
+      <div class="footer-visit">
+        <a href="" class="visit">
+          <h2 class="visit-sedona">#visitsedona</h2>
+        </a>
       </div>
-      <span class="">Website by <img src="img/logo-html-black.png" width="135" height="33" alt="Logo HTMLAcademy"></span>
+      <div class="footer-social">
+        <a class="social-item" href=""><i class="icon-twitter"></i></a>
+        <a class="social-item" href=""><i class="icon-facebook"></i></a>
+        <a class="social-item" href=""><i class="icon-youtube" ></i></a>
+      </div>
+      <div class="footer-html">
+        <span class="visit-html">Website by <a href=""><img class="i-visit-html" src="img/logo-html-black.png" width="135" height="33" alt="Logo HTMLAcademy"></a></span>
+      </div>
     </footer>
+   </div>
   </body>
 </html>
