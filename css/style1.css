@@ -1,0 +1,643 @@
+@font-face {
+  font-family: "symbols-sedona";
+  src: url("../font/symbols-sedona.eot?60737633");
+  src: url("../font/symbols-sedona.eot?60737633#iefix") format("embedded-opentype"),
+       url("../font/symbols-sedona.woff?60737633") format("woff"),
+       url("../font/symbols-sedona.ttf?60737633") format("truetype"),
+       url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "symbols-sedona";
+    src: url("../font/symbols-sedona.svg?60737633#symbols-sedona") format("svg");
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-sedona";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.icon-facebook:before { content: "\66"; } /* "f" */
+.icon-twitter:before { content: "\74"; } /* "t" */
+.icon-up-dir:before { content: "\25b2"; } /* "▲" */
+.icon-down-dir:before { content: "\25bc"; } /* "▼" */
+.icon-star:before { content: "\2605"; } /* "★" */
+.icon-check-off:before { content: "\2610"; } /* "☐" */
+.icon-check-on:before { content: "\2611"; } /* "☑" */
+.icon-calendar:before { content: "\e800"; } /* "" */
+.icon-plus:before { content: "\e801"; } /* "" */
+.icon-minus:before { content: "\e802"; } /* "" */
+.icon-youtube:before { content: "\f39e"; } /* "" */
+
+.icon-facebook, .icon-twitter, .icon-youtube {
+  font-size: 19px;
+  line-height: 20px;
+}
+
+body {
+  font-size: 14px;
+  line-height: 21px;
+  /*vertical-align: top;*/
+
+ /* text-align: center;*/
+  color: #000000;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PT Sans", Verdana, Arial, sans-serif;
+
+/* min-width: 768px;
+
+  max-width: 1200px;*/
+  background-color: #f2f2f2;
+}
+
+.container {
+  /*width: 100%;*/
+  min-width: 768px;
+  max-width: 1200px;
+
+  text-align: center;
+  /*margin: 0 auto;*/
+}
+
+.wrapper {
+  min-width: 768px;
+  max-width: 1200px;
+
+    /*Вопрос*/
+  padding: 0 0;
+  margin: 0 auto;
+
+  background-color: #fff;
+  box-shadow: 0 0 6px 6px #dedede;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  /*position: relative;
+  z-index: 5;*/
+  margin-bottom: 55px;
+
+  background-color: #fff;
+}
+
+.main-navigation {
+  float: left;
+  font-size: 0px;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+  list-style: none;
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+
+  width: 20%;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.main-navigation-title {
+  display: block;
+  padding: 16px;
+
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+.logo{
+  padding: 0;
+  position: absolute;
+}
+
+.main-navigation .main-navigation-title:hover {
+  color: #a8c9df;
+}
+
+.active .main-navigation-title:hover {
+  background: none;
+}
+
+.main-navigation .main-navigation-title:active {
+  color: #dadada;
+}
+
+.title-banner {
+  background: #dceaf3 url("../img/background-mod.jpg") center no-repeat;
+  background-size: 100% 100%;
+
+  height: 570px;
+
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.catalog-banner {
+  background: #5783a9 url("../img/background-catalog.jpg") center no-repeat;
+  background-size: 100% 100%;
+
+  height: 273px;
+
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.welcom-title {
+  margin-top: 70px;
+}
+
+.main-title .title {
+  font-size: 74px;
+  line-height: 80px;
+  color: #fff;
+
+  margin: 32px 0;
+}
+
+.item-left {
+  font-size: 0;
+
+  text-align: center;
+}
+
+.section-title {
+  display: inline-block;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+
+  vertical-align: top;
+  text-align: center;
+}
+
+.clear {
+  margin: 0;
+  padding: 0;
+}
+
+.container .title-align {
+  max-width: 450px;
+  margin: 0 0 40px 0;
+}
+
+.p-align {
+  margin-bottom: 55px;
+}
+
+.notably {
+  height: 255px;
+  color: #fff;
+}
+
+.item-left, .img-right {
+  height: 255px;
+}
+
+.item-left {
+  float: left;
+
+  width: 33%;
+  height: 100%;
+
+  background-color: #81b3d2;
+}
+
+.item-left .img-right {
+  float: right;
+  /*width: 67%;*/
+}
+
+.img-right .notably-img {
+  width: 67%;
+  height: 100%;
+}
+
+.item-left .title-align {
+  margin: 48px 0 15px 0;
+}
+
+.item-left p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.item-left p {
+  margin: 0 20% 0 20%;
+}
+
+.item-left p:last-child {
+  margin: 27px 20% 48px 20%;
+}
+
+.suggestions {
+  padding: 55px 0;
+  background-color: #fff;
+  width: 100%;
+  max-height: 330px;
+}
+
+.suggestions-item_image {
+  padding-bottom: 30px;
+}
+
+.suggestions-item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.suggestions-item:last-child {
+  float: right;
+  width: 33%;
+  text-align: center;
+}
+
+.suggestions-item_title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin: 0 0 25px 0;
+}
+
+.suggestions-item p {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0 20% 0 20%;
+  margin: 0;
+}
+
+.img-left, .item-right {
+  height: 255px;
+}
+
+.img-left {
+  float: left;
+  display: block;
+  width: 67%;
+  margin: 0;
+}
+
+.item-right {
+  float: right;
+
+  width: 33%;
+  height: 100%;
+  margin: 0;
+
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.item-right .notably-img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-right .title-align {
+  margin: 48px 0 15px 0;
+}
+
+.item-right p {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.item-right p {
+  margin: 0 20% 0 20%;
+}
+
+.item-right p:last-child {
+  margin: 27px 20% 48px 20%;
+}
+
+.features {
+  padding: 51px 0 0 0;
+  background-color: #eeeeee;
+  width: 100%;
+  height: 204px;
+}
+
+.features-item {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.features-item:last-child {
+  float: right;
+  width: 33%;
+  text-align: center;
+}
+
+.features-item .features-item_title {
+  font-size: 21px;
+  line-height: 26px;
+
+  margin: 0 0 15px 0;
+}
+
+.features-item p {
+  font-size: 14px;
+  line-height: 21px;
+
+  margin: 0 20% 0 20%;
+}
+
+.features-item p:last-child {
+  margin: 27px 20% 0 20%;
+}
+
+.map-title {
+  margin: 57px 0 38px 0;
+}
+
+.data-map p {
+ /* max-width: 435px;*/
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 28px 140px;
+
+  font-size: 21px;
+  font-family: "PT Sans", Verdana, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+  background: #766357;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #604e43; 
+}
+
+.btn:active{
+  background-color: #503e33;
+  color: #928a85;
+}
+
+.main-footer {
+/*  margin-top: 60px;*/
+  font-size: 0;
+  padding: 32px 0;
+
+  background-color: #f9fbf6;
+}
+
+.footer-visit, .footer-social, .footer-html {
+  width: 33%;
+
+  font-size: 0; 
+}
+
+.footer-visit, .footer-social {
+  float: left;
+}
+
+.footer-html {
+  float: right;
+}
+
+.visit-sedona {
+  font-size: 21px;
+  font-family: "PT Sans", Verdana, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  padding-top: 10px; 
+}
+
+.footer-visit a {
+    text-decoration: none;
+}
+
+.visit-html {
+  font-size: 14px;
+  font-family: "PT Sans", Verdana, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+
+  /*margin-top: 20px;*/
+}
+
+.footer-html img {
+  vertical-align: middle;
+  /*padding-top: 7px;*/
+}
+
+.footer-social .social-item {
+  margin: 0 2px;
+  display: inline-block;
+  vertical-align: top;
+  width: 47px;
+  height: 47px;
+
+  font-size: 0;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+
+  background: #81b3d2;
+}
+
+.social-item {
+  position: relative;
+}
+
+.social-item i {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+}
+
+.visit img {
+  position: relative;
+
+  padding-left: 130px;
+}
+
+.visit h2 {
+  margin-top: 4px;
+}
+
+.map {
+  background-size: 100% 100%;
+}
+
+.footer-social .social-item:hover {
+  background-image: #669ec0;
+}
+
+.footer-social .social-item:active {
+  color: #94b9d2;
+  background-color: #5496bd
+}
+
+.top-query {
+  color: #fff;
+  margin: 28px 0 33px 0;
+}
+
+.infrastructure, .housing, .cost {
+  width: 33%;
+
+  text-align: left;
+  /*padding-left: 30px;*/
+}
+
+.infrastructure, .housing {
+  float: left;
+
+  min-width: 120px; 
+  /*padding: 0 22% 0 22%;*/
+}
+
+.cost {
+  float: right;
+}
+
+.infrastructure input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + .checkbox-i{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 21px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .checkbox-i::before{
+  content: "\2610";
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 21px;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + .checkbox-i::before{
+  content: "\2611";
+  margin-right: 7px;
+}
+
+.housing input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + .checkbox-h{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 21px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + .checkbox-h::before{
+  content: "\2610";
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 21px;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+input[type="checkbox"]:checked + .checkbox-h::before{
+  content: "\2611";
+  margin-right: 7px;
+}
+
+.btn-catalog {
+  display: inline-block;
+  color: #fff;
+  padding: 7px 35px;
+  border: 3px solid #fff;
+  text-decoration: none;
+  outline: none;
+  /*margin: 0 0;*/
+  line-height: 21px;
+  font-weight: normal;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: none;
+}
