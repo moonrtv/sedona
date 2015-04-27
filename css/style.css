@@ -327,94 +327,88 @@ body {
   margin: 48px 0 15px 0;
 }
 
-.block-bl {
-  text-align: center;
-  color: #fff;
-
-  height: 256px;;
-
-  background-color: #81b3d2;
-}
-
-.block-bl p {
-  margin: 0 20% 25px 20%;
-}
-
-.block-bl p:last-child {
-  margin: 0 20% 0 20%;
-}
-
 .suggestions-item {
   float: left;
   box-sizing: border-box;
-  position: relative;
   text-align: center;
   width: 33.33%;
   min-height: 330px;
 }
-
-.suggestions-1 .suggestions-pic {
+ 
+.icon-home, .icon-burger, .icon-gift {
   display: inline-block;
   vertical-align: middle;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.icon-home {   
   width: 75px; 
   height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -75px;
-  margin-top: 60px;
+  margin-top: 60px; 
 }
 
-.suggestions-2 .suggestions-pic {
-  display: inline-block;
-  vertical-align: middle;
+.icon-burger { 
   width: 74px; 
-  height: 74px;
+  height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -150px;
-  margin-top: 60px;
+  margin-top: 60px; 
 }
-
-.suggestions-3 .suggestions-pic {
-  display: inline-block;
-  vertical-align: middle;
+.icon-gift {   
   width: 64px; 
-  height: 76px;
+  height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -228px;
   margin-top: 57px;
 }
 
-/*.suggestions-item_title::before{
+.footer-html {
+  position: relative;
+}
+
+.icon-html {
+  font-size: 14px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #000;
+
+  padding-right: 143px;
+  margin-right: 10px;
+}
+
+.icon-html::after {
   content: "";
 
   position: absolute;
-  top: 0;
-  left: 41%;
-  width: 50%;
 
-  display: block;
+  display: inline-block;
 
-  padding-top: 75px;
-  margin: 60px 0 28px 0;
+  width: 135px; 
+  height: 33px;
   background: url("../img/sprite.png") no-repeat;
-}*/
+  background-position: -5px -0px;
 
-/*.suggestions-1 .suggestions-item_title::before {
-  background-position: -5px -74px;
+  margin-left: 8px;
 }
 
-.suggestions-2 .suggestions-item_title::before {
-  background-position: -5px -150px;
+.footer-html .icon-html:hover:active {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -76px;
 }
 
-.suggestions-3 .suggestions-item_title::before {
-  background-position: -5px -228px;
+.footer-html .icon-html:hover:after {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -38px;
 }
-*/
+
 .suggestions-item_title {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin: 30px 0 25px 0;
+  margin: 28px 0 25px 0;
 }
 
 .suggestions-item p {
@@ -546,7 +540,7 @@ body {
 }
 
 .visit-html {
-  margin-right: 10px;
+  margin-left: 50%;
 }
 
 .footer-html img {
