@@ -9,39 +9,40 @@
   </head>
   <body>
     <div class="wrapper">
-   <!--  <div class="container"> -->  
+ 
     <div class="catalog-banner">
     <!-- header -->
       <header class="main-header">
-        <div class="row">
-          <nav class="main-navigation row--inline">
+          <nav class="main-navigation">
             <ul>
-              <li class="col s5-1 text-center">
+              <li>
                 <a class="main-navigation-title" href="#">Информация</a>
               </li>
-              <li class="col s5-1 text-center">
+              <li>
                 <a class="main-navigation-title" href="#">Фото и Видео</a>
               </li>
-              <li class="col s5-1 text-center">
-                <a class="logo" href="index.html">
-                  <img src="img/logo.png" width="138" height="70" alt="Logo">
-                </a>
+              <li>
               </li>
-              <li class="col s5-1 text-center">
+              <li>
                 <a class="main-navigation-title" href="#">Карта штата</a>
               </li>
-              <li class="col s5-1 text-center">
+              <li>
                 <a class="main-navigation-title" href="#">Гостиницы</a>
               </li>
             </ul>
           </nav>
-        </div>
+
+          <a class="logo" href="index.html">
+            <img src="img/logo.png" width="138" height="70" alt="Logo">
+          </a>
       </header>
+      
+
 
     <div class="row top-query">
       <form name="query" action="/echo" method="post">
 
-      <div class="col s12-4 infrastructure">
+      <div class="col s-25 infrastructure">
         <h2>Инфрастуктура:</h2>
         <input type="checkbox" name="infrastructure" id="infrastructure-1" checked>
         <label class="checkbox-i" for="infrastructure-1">Бассейн</label>
@@ -51,7 +52,7 @@
         <label class="checkbox-i" for="infrastructure-3">WI-FI</label>
       </div>
 
-      <div class="col s12-4 housing">
+      <div class="col s-35 housing">
         <h2 class="">Тип жилья:</h2>
         <input type="checkbox" name="housing" id="housing-1" checked>
         <label class="checkbox-h" for="housing-1">Гостиница</label>
@@ -61,47 +62,72 @@
         <label class="checkbox-h" for="housing-3">Апартаменты</label>
       </div>
 
-      <div class="col s12-4 cost">
-        <h2>Стоимость в сутки (р):</h2>
-        <div class="slider">
-          <img src="../img/slider.png" width="224" height="69" alt="Slider">
+      <div class="col s-40 cost">
+        <span>Стоимость в сутки (р):</span>
+       <!--  <div class="slider"> -->
+            <div class="range-filter">
+            <div class="price-controls">
+              <div class="price-border">
+                от <input class="min-price" type="text" value="0" maxlength="4" size="5" placeholder="min-price">
+                до <input class="max-price" type="text" value="3 000" maxlength="4" size="5" placeholder="max-price">
+                <div class="separator"></div>
+              </div>
+            <div class="range-controls">
+                <div class="scale"><div style="width:70%;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+            </div>
+            
+         <!--  <img src="img/slider.png" width="224" height="69" alt="Slider"> -->
+        <!-- </div> -->
+          </div>
         </div>
         <button class="btn-catalog" type="submit" name="submit">Показать</button>
-      </div>
+    </div>
       </form>
     </div>
   </div>
     
    <!--  <div class="container"> -->
+  <div class="row filters">
+    <div class="col s-20">
+      <div class="filters-answer">Найдено: 3</div>
+    </div>
+    <div class="col s-35 sort">
+      <span class="title">Сортировка:</span>
+      <a href="" class="col font-sort active">По цене</a>
+      <a href="" class="col font-sort">По типу</a>
+      <a href="" class="col font-sort">По рейтингу</a>
+    </div>
+    <div class="col s-40 sort-order">
+      <a class="col response-icon" href=""><i class="icon-up-dir"></i></a>
+      <a class="col response-icon" href=""><i class="icon-down-dir"></i></a>
+    </div>
+  </div>
 
-      <div class="row response-title">
+<!--       <div class="row response-title">
         <div class="row--inline">
           <h2 class="col">Найдено: 3</h2>
           <p class="col">Сортировка:</p>
-        
-       <!--  <div class="row--inline sort"> -->
           <a href="" class="col font-sort active">По цене</a>
           <a href="" class="col font-sort">По типу</a>
           <a href="" class="col font-sort">По рейтингу</a>
-        <!-- </div> -->
-       <!--  <div class="row--inline"> -->
           <a class="col response-icon" href=""><i class="icon-up-dir"></i></a>
           <a class="col response-icon" href=""><i class="icon-down-dir"></i></a>
          </div> 
-      </div>
+      </div> -->
 
       <div class="response">
-        <img class="border" src="../img/line.png" alt="Border">
         <article class="row response-item">
-          <div class="col s12-2">
+          <div class="col s-20">
             <img class="img-item" src="img/hotel.jpg" width="135" height="90" alt="Hotel">
           </div>
-          <div class="col s12-7 response-item">
+          <div class="col s-35 response-item">
             <h2 class="align-resp article-title">Amara Resort & Spa</h2>
             <p class="p-resp"><span class="align-resp">Гостиница</span><span class="sp-align">от 3500 р.</span></p>
             <a href="" class="btn more align-resp">Подробнее</a>
             <a href="" class="btn reserve">Забронировать</a> </div>
-          <div class="col s12-3">
+          <div class="col s-40 text-right">
               <div class="star-item">
                 <i class="icon-star"></i>
                 <i class="icon-star"></i>
@@ -114,18 +140,17 @@
 
         </article>
         
-        <img class="border" src="../img/line.png" alt="Border">
         <article class="row response-item">
-          <div class="col s12-2">
+          <div class="col s-20">
             <img class="img-item" src="img/motel.jpg" width="135" height="90" alt="Motel">
           </div>
-          <div class="col s12-7 response-item">
+          <div class="col s-35 response-item">
             <h2 class="align-resp article-title">Desert Quail Inn</h2>
             <p class="p-resp"><span class="align-resp">Мотель</span><span class="sp-align">от 2000 р.</span></p>
             <a href="" class="btn more align-resp">Подробнее</a>
             <a href="" class="btn reserve">Забронировать</a>
           </div>
-          <div class="col s12-3">
+          <div class="col s-40 text-right">
               <div class="star-item">
                 <i class="icon-star"></i>
                 <i class="icon-star"></i>
@@ -134,18 +159,17 @@
         </div>
         </article>
 
-        <img class="border" src="../img/line.png" alt="Border">
         <article class="row response-item">
-          <div class="col s12-2">
+          <div class="col s-20">
             <img class="img-item" src="img/apartments.jpg" width="135" height="90" alt="Apartments">
           </div>
-          <div class="col s12-7 response-item">
+          <div class="col s-35 response-item">
             <h2 class="align-resp article-title">Villas at Poco Diablo</h2>
             <p class="p-resp"><span class="align-resp">Апартаменты</span><span class="sp-align">от 4000 р.</span></p>
             <a href="" class="btn more align-resp">Подробнее</a>
             <a href="" class="btn reserve">Забронировать</a>
           </div>
-          <div class="col s12-3">
+          <div class="col s-40 text-right">
               <div class="star-item">
                 <i class="icon-star"></i>
                 <i class="icon-star"></i>
@@ -154,22 +178,20 @@
           <span class="bezel">Рейтинг: 9,2</span>
         </div>
         </article>
-        <img class="border" src="../img/line.png" alt="Border">
       </div>
-   <!--  </div> -->
-  <!-- </div> -->
-    <footer class="row row--inline main-footer">
-      <div class="col s12-4 footer-visit">
+
+    <footer class="row-inline main-footer">
+      <div class="col s-33 footer-visit">
         <a class="visit" href="index.html">
           <h2 class="visit-sedona">#visitsedona</h2>
         </a>
       </div>
-      <div class="col s12-4 footer-social">
+      <div class="col s-33 footer-social">
         <a class="social-item" href=""><i class="icon-twitter"></i></a>
         <a class="social-item" href=""><i class="icon-facebook"></i></a>
         <a class="social-item" href=""><i class="icon-youtube" ></i></a>
       </div>
-      <div class="col s12-4 footer-html">
+      <div class="col s-33 footer-html">
         <span class="visit-html">Website by <a href=""><img class="i-visit-html" src="img/logo-html-black.png" width="135" height="33" alt="Logo HTMLAcademy"></a></span>
       </div>
     </footer>
