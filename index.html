@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     
@@ -123,10 +124,10 @@
       <div class="row-inline text-center">
         <h2 class="col s-50 map-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a  class="btn" href="">Поиск гостиницы в Седоне</a>
+        <a class="btn">Поиск гостиницы в Седоне</a>
       </div>
-      <div class="map">
-        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=95kQaWJLaIarzhZbUWHmULLOWwr-CP9j&width=auto&height=475"></script>
+      <div class="map" id="map-canvas">
+
       </div>
     </div>
 
@@ -150,9 +151,9 @@
     <div class="modal-content">
       <form class="search-form" action="/echo" method="post">
         <label class="context-font" for="from-date">Дата заезда:</label>
-        <input type="date" name="date" value="24 апреля 2014" id="from-date" placeholder="Date">
+        <input type="date" name="date" value="" id="from-date" placeholder="24 апреля 2014">
         <label class="context-font" for="to-date">Дата заезда:</label>
-        <input type="date" name="date" value="4 апреля 2014" id="to-date" placeholder="Date">
+        <input type="date" name="date" value="" id="to-date" placeholder="4 апреля 2014">
         <label class="context-font" for="adults">Взрослые:</label>
         <input type="number" min="0" max="50" step="1" id="adults" value="2">
         <label class="context-font" for="adults">Дети:</label>
@@ -160,5 +161,8 @@
         <button type="submit" class="btn btn-form">Найти</button>
       </form>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/map.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
