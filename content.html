@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+    <!-- header -->
+    <div class="catalog-banner">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a class="main-navigation-title" href="#">Информация</a>
+            </li>
+            <li>
+              <a class="main-navigation-title" href="#">Фото и Видео</a>
+            </li>
+            <li>
+            </li>
+            <li>
+              <a class="main-navigation-title" href="#">Карта штата</a>
+            </li>
+            <li>
+              <a class="main-navigation-title" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" width="138" height="70" alt="Logo">
+        </a>
+      </header>
+    </div>
+
+      <div class="content-f">
+        <h2>Поиск гостиницы в седоне:</h2>
+        <form class="search-form" action="/echo" method="post">
+          <label class="context-font" for="from-date">Дата заезда:</label>
+          <input type="date" name="date" value="" id="from-date" placeholder="24 апреля 2014">
+          <label class="context-font" for="to-date">Дата заезда:</label>
+          <input type="date" name="date" value="" id="to-date" placeholder="4 апреля 2014">
+          <label class="context-font" for="adults">Взрослые:</label>
+          <input class="align-rgh" type="number" min="0" max="50" step="1" id="adults" value="2">
+          <label class="context-font" for="adults">Дети:</label>
+          <input type="number" min="0" max="50" step="1" id="child" value="0">
+          <button type="submit" class="btn btn-form">Найти</button>
+        </form>
+      </div>
+
+      <footer class="row-inline main-footer">
+        <div class="col s-33 footer-visit">
+          <a class="visit" href="index.html">
+            <h2 class="visit-sedona">#visitsedona</h2>
+          </a>
+        </div>
+        <div class="col s-33 footer-social">
+          <a class="social-item" href=""><i class="icon-twitter"></i></a>
+          <a class="social-item" href=""><i class="icon-facebook"></i></a>
+          <a class="social-item" href=""><i class="icon-youtube" ></i></a>
+        </div>
+        <div class="col s-33 footer-html">
+           <a class="icon-html" href="">Website by</a>
+        </div>
+      </footer>
+     </div>
+  </body>
+</html>
