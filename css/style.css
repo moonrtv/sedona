@@ -18,38 +18,38 @@
   }
 }
 */
- 
+
  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "symbols-sedona";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
+
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
   /* opacity: .8; */
- 
+
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
+
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
+
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
   margin-left: .2em;
- 
+
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
- 
+
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+
 .icon-facebook:before { content: "\66"; } /* "f" */
 .icon-twitter:before { content: "\74"; } /* "t" */
 .icon-up-dir:before { content: "\25b2"; } /* "▲" */
@@ -249,7 +249,7 @@ body {
 
 .main-navigation-title {
   display: block;
-  padding: 15px; 
+  padding: 15px;
 
   font-size: 14px;
   line-height: 26px;
@@ -311,7 +311,7 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  
+
   padding: 0 3%;
   margin: 0;
 }
@@ -320,7 +320,7 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  
+
   padding: 0 20%;
   margin: 0;
 }
@@ -330,9 +330,9 @@ body {
   padding: 0;
 }
 
-.box  { 
+.box  {
   float: left;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 
   width: 66.66%;
 
@@ -353,7 +353,7 @@ body {
   width: 33.33%;
   min-height: 330px;
 }
- 
+
 .icon-home, .icon-burger, .icon-gift {
   display: inline-block;
   vertical-align: middle;
@@ -361,24 +361,24 @@ body {
   text-indent: -9999px;
 }
 
-.icon-home {   
-  width: 75px; 
+.icon-home {
+  width: 75px;
   height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -75px;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
-.icon-burger { 
-  width: 74px; 
+.icon-burger {
+  width: 74px;
   height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -150px;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
-.icon-gift {   
-  width: 64px; 
+.icon-gift {
+  width: 64px;
   height: 75px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -228px;
@@ -406,7 +406,7 @@ body {
 
   display: inline-block;
 
-  width: 135px; 
+  width: 135px;
   height: 33px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -5px -0px;
@@ -509,7 +509,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #604e43; 
+  background-color: #604e43;
 }
 
 .btn:active{
@@ -542,7 +542,7 @@ body {
   outline: none;
   cursor: pointer;
 
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .footer-visit a {
@@ -689,14 +689,14 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   font-size: 16px;
   line-height: 21px;
   text-align: right;
-  
+
   margin: 26px 35px 9px 0;
 }
 
 .top-query label {
   font-size: 14px;
   line-height: 21px;
-  
+
   margin-bottom: 25px;
 }
 
@@ -908,7 +908,7 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   left: 28.8%;
   display: none;
 
-  width: 460px;
+  width: 467px;
   left: 0;
   right: 0;
   margin: auto;
@@ -949,33 +949,7 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   margin-right: 3px;
 }
 
-.modal-content input[type=date]{
-  width: 305px;
-  margin-bottom: 28px;
-
-  font-family: "PT Sans", Verdana, Arial, sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  background-color: #f2f2f2;
-  text-transform: uppercase;
-  border: none;
-  outline: none;
-
-  padding-right: 40px;
-}
-
-.login-form input.icon-user {
-  content: "icon-calendar";
-
-  font-size: 12px;
-  color: #a9a9a9;
-}
-
-.modal-content input[type=number]{
-  width: 115px;
-  margin-right: 48px;
-
+.modal-content input[type="text"]{
   font-family: "PT Sans", Verdana, Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -986,8 +960,82 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   outline: none;
 }
 
-.modal-content input[type=number]:last-child{
+.modal-content input[data-time="time"] {
+  width: 68.6%;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  padding: 8px 40px 8px 5px;
+}
+
+.modal-content input[data-time="time"]:hover {
+  background-color: #ebebeb;
+}
+
+.modal-content input[data-time="time"]:focus {
+  outline: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.icon-calendar{
+  position: relative;
+  margin-left: -37px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #c2c2c2;
+}
+
+.icon-calendar:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.icon-calendar:active{
+  color: #81b3d2;
+}
+
+.modal-content__count {
+  float: left;
+}
+
+.modal-content__count:last-child {
+  float: right;
+}
+
+.modal-content input[data-time="count"] {
+    width: 17px;
+    padding: 4px 9px 7px 9px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.modal-content input[data-time="count"]:last-child {
    margin-right: 0;
+}
+
+.people_plus, .people_minus{
+  margin: 0;
+  background: #f2f2f2;
+  color: #a9a9a9;
+  border: none;
+  width: 35px;
+  padding: 5.5px 0 6.6px 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  outline: none;
+}
+
+.people_minus {
+  margin-left: 25px;
+}
+
+.people_plus:hover, .people_minus:hover{
+  color: black;
+  outline: none;
+}
+
+.people_plus:active, .people_minus:active{
+  color: #81b3d2;
 }
 
 .btn-form {
@@ -1015,13 +1063,13 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   font-size: 0;
 }
 
-.range-filter{
+.range-filter {
     width: 240px;
     margin: 0 0;
     float: right;
 }
 
-.range-controls{
+.range-controls {
     position:relative;
     height: 40px;
     margin-bottom: 15px;
@@ -1032,19 +1080,19 @@ input[type="checkbox"]:checked + .checkbox-h::before{
     overflow:hidden;
 }
 
-.range-controls .scale{
+.range-controls .scale {
     margin-top: 20px;
     height: 2px;
     background: #747375;
 }
 
-.range-controls .bar{
+.range-controls .bar {
     height: 2px;
     background: #fff;
     width: 80%;
 }
 
-.range-controls .toggle{
+.range-controls .toggle {
   position: absolute;
   top: 10px;
   left: 15px;
@@ -1057,7 +1105,7 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 
-.range-controls .max-toggle{
+.range-controls .max-toggle {
     left: 180px;
 }
 
@@ -1065,7 +1113,7 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   text-align: right;
 }
 
-.price-controls input{
+.price-controls input {
   margin: 5px 0 5px 0;
   border: none;
   background: none;
@@ -1080,10 +1128,10 @@ input[type="checkbox"]:checked + .checkbox-h::before{
   outline: none;
 }
 
-.price-controls .min-price{
+.price-controls .min-price {
     margin-right:14px;
 }
-.price-controls{
+.price-controls {
     white-space:nowrap;
 }
 
@@ -1137,7 +1185,7 @@ input[type="checkbox"]:checked + .checkbox-h::before{
 }
 
 .map {
-  width: 100%; 
+  width: 100%;
   height: 475px;
 }
 
