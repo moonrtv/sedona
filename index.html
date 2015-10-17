@@ -148,7 +148,8 @@
     </footer>
    </div>
     <div class="modal-content">
-      <form class="search-form" action="/echo" method="post">
+      <form class="search-form" method="post">
+      <!-- <form class="search-form" action="/echo" method="post"> -->
         <label class="context-font" for="from-date">Дата заезда:</label>
         <input type="text" name="date" data-time="time" value="" id="from-date">
         <i class="icon-calendar"></i>
@@ -156,14 +157,14 @@
         <input type="text" name="date" data-time="time" value="" id="to-date">
         <i class="icon-calendar"></i>
         <div class="block">
-          <div class="context-font modal-content__count">Взрослые: <button value="-" class="people_minus"><i class="icon-minus"></i></button><input type="text" data-time="count" name="adult"><button value="+" class="people_plus"><i class="icon-plus"></i></button></div>
-          <div class="context-font modal-content__count">Дети: <button value="-" class="people_minus"><i class="icon-minus"></i></button><input type="text" data-time="count" name="child"><button value="+" class="people_plus"><i class="icon-plus"></i></button></div>
+          <div class="context-font modal-content__count">Взрослые: <button value="-" class="people_minus"><i class="icon-minus"></i></button><input type="text" data-time="count" name="adult" value=""><button value="+" class="people_plus"><i class="icon-plus"></i></button></div>
+          <div class="context-font modal-content__count">Дети: <button value="-" class="people_minus"><i class="icon-minus"></i></button><input type="text" data-time="count" name="child" value=""><button value="+" class="people_plus"><i class="icon-plus"></i></button></div>
         </div>
         <button type="submit" class="btn btn-form">Найти</button>
       </form>
     </div>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-    <script src="js/map.min.js"></script>
-    <script src="js/form.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
