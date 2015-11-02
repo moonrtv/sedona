@@ -5,11 +5,11 @@
     <title>Седона</title>
     <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
- 
+
     <div class="catalog-banner">
     <!-- header -->
       <header class="main-header">
@@ -36,9 +36,9 @@
             <img src="img/logo.png" width="138" height="70" alt="Logo">
           </a>
       </header>
-      
+
     <div class="row top-query">
-      <form name="query" action="/echo" method="post">
+      <form name="query" method="post">
 
       <div class="col s-25 infrastructure">
         <h2>Инфрастуктура:</h2>
@@ -65,8 +65,8 @@
           <div class="range-filter">
             <div class="price-controls">
               <div class="price-border">
-                от <input class="min-price" type="text" value="0" maxlength="4" size="4" placeholder="min-price">
-                до <input class="max-price" type="text" value="3 000" maxlength="4" size="4" placeholder="max-price">
+                <span> от </span><input class="min-price" type="text" value="0" maxlength="4" size="4" placeholder="min-price">
+                <span> до </span><input class="max-price" type="text" value="3 000" maxlength="4" size="4" placeholder="max-price">
                 <div class="separator"></div>
               </div>
               <div class="range-controls">
@@ -81,7 +81,7 @@
       </form>
     </div>
   </div>
-    
+
   <div class="row filters">
     <div class="col s-20">
       <div class="filters-answer">Найдено: 3</div>
@@ -107,7 +107,7 @@
         <h2 class="align-resp article-title">Amara Resort &amp; Spa</h2>
         <p class="p-resp"><span class="align-resp">Гостиница</span><span class="sp-align">от 3500 р.</span></p>
         <a href="" class="btn more align-resp">Подробнее</a>
-        <a href="" class="btn reserve">Забронировать</a> 
+        <a href="" class="btn reserve">Забронировать</a>
       </div>
       <div class="col s-20 text-right">
         <div class="star-item">
@@ -120,7 +120,7 @@
         <span class="bezel">Рейтинг: 8,5</span>
       </div>
     </article>
-        
+
     <article class="row response-item">
       <div class="col s-20 text-right">
         <img class="img-item" src="img/motel.jpg" width="135" height="90" alt="Motel">
